@@ -1,12 +1,13 @@
+#include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 /**
- * main - Entry point
- *
- * Return: Always 1 (Error)
- **/
+ * main - main block
+ * Return: 1
+ */
 int main(void)
 {
-const char m[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-write(2, m, sizeof(m) - 1);
+int s = strlen("and that piece of art is useful - Dora Korpar, 2015-10-19\n");
+write(2, "and that piece of art is useful - Dora Korpar, 2015-10-19\n", s);
 return (1);
 }

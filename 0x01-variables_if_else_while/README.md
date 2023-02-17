@@ -1,0 +1,1 @@
+This is the second lesson on low level programming. We look at the variables and control flows

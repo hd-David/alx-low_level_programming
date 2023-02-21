@@ -5,11 +5,7 @@
  *
  * @i: input number as an integer.
  *
- * Return: absolute value
- */
-
-/**
- * Valuen n passed from the prototype
+ * Return: absolute value n
  */
 
 int _abs(int n)

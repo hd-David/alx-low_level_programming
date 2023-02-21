@@ -7,6 +7,11 @@
  *
  * Return: absolute value
  */
+
+/**
+ * Valuen n passed from the prototype
+ */
+
 int _abs(int n)
 {
 if (n >= 0)

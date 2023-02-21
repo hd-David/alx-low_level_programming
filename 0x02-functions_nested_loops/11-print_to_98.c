@@ -5,7 +5,7 @@
  * from n to 98, followed by a new line.
  * @n: the number to start counting from.
  *
- * Return: void.
+ * Return: nothing.
  */
 void print_to_98(int n)
 {

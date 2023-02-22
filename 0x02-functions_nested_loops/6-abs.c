@@ -7,8 +7,7 @@
  * Description: int _abs takes a parament n
  * Return: absolute value n
  */
-
-int _abs(int n)
+int _abs(int n) /* * Description: int _abs takes a parament n*/
 {
 if (n >= 0)
 {

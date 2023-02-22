@@ -4,7 +4,7 @@
  * of an integer.
  *
  * @i: input number as an integer.
- *
+ * int _abs takes a parament n
  * Return: absolute value n
  */
 

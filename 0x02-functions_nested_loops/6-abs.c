@@ -4,7 +4,7 @@
  * of an integer.
  *
  * @i: input number as an integer.
- * Description: int _abs takes a parament n
+ * Description: n is the value passed from the prototype
  * Return: absolute value n
  */
 int _abs(int n) /* * Description: int _abs takes a parament n*/

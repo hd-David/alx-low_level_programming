@@ -5,18 +5,26 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
-int n = 98;
-int a = 1, b = 2;
-int i, c;
-printf("%d, %d", a, b);
-for (i = 3; i <= n; i++)
+int count = 2;
+unsigned long long a = 1, b = 2, c;
+printf("1, 2, ");
+while (count < 98)
 {
 c = a + b;
-printf(", %d", c);
 a = b;
 b = c;
+if (c > 0)
+{
+printf("%llu", c);
+if (count < 97)
+{
+printf(", ");
+}
+count++;
+}
 }
 printf("\n");
 return (0);

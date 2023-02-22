@@ -3,7 +3,7 @@
  * _abs - Computes the absolute value
  * of an integer.
  *
- * @i: input number as an integer.
+ * @n: input number as an integer.
  * Description: n is the value passed from the prototype
  * Return: absolute value n
  */

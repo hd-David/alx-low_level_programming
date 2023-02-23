@@ -10,5 +10,6 @@ void print_numbers(void);
 void positive_or_negative(int i);
 int mul(int a, int b);
 int _isdigit(int c);
+void print_triangle(int size);
 void more_numbers(void);
 #endif

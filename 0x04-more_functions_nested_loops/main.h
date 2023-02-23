@@ -11,6 +11,7 @@ int _putchar(char c);
 void print_numbers(void);
 void positive_or_negative(int i);
 int mul(int a, int b);
+void print_number(int n);
 int _isupper(int c);
 void print_triangle(int size);
 int _isdigit(int c);

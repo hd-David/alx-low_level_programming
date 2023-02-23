@@ -9,7 +9,8 @@ int _putchar(char c);
 void print_numbers(void);
 void positive_or_negative(int i);
 int mul(int a, int b);
-int _isdigit(int c);
+int _isupper(int c);
 void print_triangle(int size);
+int _isdigit(int c);
 void more_numbers(void);
 #endif

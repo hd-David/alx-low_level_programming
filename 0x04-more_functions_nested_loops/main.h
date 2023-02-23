@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <unistd.h>
-void print_x14(void)
+void print_x14(void);
 void print_most_numbers(void);
 int _putchar(char c);
 void print_numbers(void);

@@ -5,30 +5,33 @@
  *
  * Return: the integer value represented by the string, or 0 if there are no digits in the string
  */
+
 int _atoi(char *s)
 {
-int i = 0;
-int num = 0;
-int sign = 1;
+unsigned int count = 0, size = 0, m = 1, i;
+int result = 0;
 
-while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == '\r' || s[i] == '\f' || s[i] == '\v')
+while (*(s + count) != '\0')
 {
-i++;
+if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
+break;
+
+if (*(s + count) == '-')
+m *= -1;
+
+if ((*(s + count) >= '0') && (*(s + count) <= '9'))
+{
+if (size > 0)
+m *= 10;
+size++;
 }
-if (s[i] == '-')
-{
-sign = -1;
-i++;
-}
-else if (s[i] == '+')
-{
-i++;
+count++;
 }
 
-while (s[i] >= '0' && s[i] <= '9')
+for (i = count - size; i < count; i++)
 {
-num = num * 10 + (s[i] - '0');
-i++;
+result = result + ((*(s + i) - 48) * m);
+m /= 10;
 }
-return sign * num;
+return result;
 }

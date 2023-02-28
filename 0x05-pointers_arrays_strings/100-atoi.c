@@ -1,21 +1,20 @@
 #include "main.h"
 /**
- * _atoi - Converts a string to an integer
- * @s: The string to be converted
+ * _atoi - convert a string to an integer
+ * @s: the string to convert
  *
- * Return: The integer value of the string
+ * Return: the integer value represented by the string, or 0 if there are no digits in the string
  */
 int _atoi(char *s)
 {
-int i, sign, num;
+int i = 0;
+int num = 0;
+int sign = 1;
 
-i = sign = num = 0;
-
-/* Ignore leading whitespace */
-while (s[i] == ' ')
+while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == '\r' || s[i] == '\f' || s[i] == '\v')
+{
 i++;
-
-/* Determine the sign of the number */
+}
 if (s[i] == '-')
 {
 sign = -1;
@@ -23,19 +22,13 @@ i++;
 }
 else if (s[i] == '+')
 {
-sign = 1;
 i++;
 }
 
-/* Convert digits to integer */
 while (s[i] >= '0' && s[i] <= '9')
 {
 num = num * 10 + (s[i] - '0');
 i++;
 }
-
-/* Apply sign to the integer */
-num *= sign;
-
-return (num);
+return sign * num;
 }

@@ -13,13 +13,13 @@ int i;
 /*copy up to n characters from src to dest*/
 for (i = 0; i < n && src[i] != '\0'; i++)
 {
-dest[i] = src[i],
+dest[i] = src[i];
 }
 /* Add null bytes if n > strlen(src) */
 while (i < n)
 {
 dest[i] = '\0';
-i++
+ i++;
 }
 return (dest);
 }

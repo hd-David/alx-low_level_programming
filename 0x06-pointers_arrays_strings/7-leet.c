@@ -8,14 +8,14 @@
 char *leet(char *str)
 {
 int i, j;
-char *letters = "aeotlAEOTL";
-char *leet = "4307104310";
+char *letters = "aeotls";
+char *leet = "430157";
 
 for (i = 0; str[i] != '\0'; i++)
 {
 for (j = 0; letters[j] != '\0'; j++)
 {
-if (str[i] == letters[j])
+if (str[i] == letters[j] || str[i] == letters[j] - 32)
 {
 str[i] = leet[j];
 break;

@@ -7,20 +7,25 @@
  */
 char *leet(char *str)
 {
-int i, j;
-char *letters = "aeotls";
-char *leet = "430157";
+int i;
+char leet_map[256] = {0};
+char *leet_str = str;
 
+/* Build the 1337 encoding map*/
+leet_map['a'] = leet_map['A'] = '4';
+leet_map['e'] = leet_map['E'] = '3';
+leet_map['o'] = leet_map['O'] = '0';
+leet_map['t'] = leet_map['T'] = '7';
+leet_map['l'] = leet_map['L'] = '1';
+
+/* Encode the string in-place*/
 for (i = 0; str[i] != '\0'; i++)
 {
-for (j = 0; letters[j] != '\0'; j++)
+if (leet_map[(int)str[i]])
 {
-if (str[i] == letters[j] || str[i] == letters[j] - 32)
-{
-str[i] = leet[j];
-break;
+str[i] = leet_map[(int)str[i]];
 }
 }
-}
-return (str);
+
+return (leet_str);
 }

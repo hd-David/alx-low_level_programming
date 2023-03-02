@@ -7,7 +7,7 @@
  */
 void print_number(int n)
 {
-int i, j, digit, divisor, is_negative;
+int i,  digit, divisor, is_negative;
 
 is_negative = n < 0;
 divisor = 1;

@@ -1,8 +1,6 @@
 #include <stdio.h>
-/**
-* main- is the entry point
-* Return: nothing
-*/
+
+
 int main(void)
 {
 int n;

@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+void set_string(char **s, char *to);
 unsigned int _strspn(char *s, char *accept);
 char *_strchr(char *s, char c);
 char *_memcpy(char *dest, char *src, unsigned int n);

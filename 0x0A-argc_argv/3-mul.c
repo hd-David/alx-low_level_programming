@@ -25,7 +25,7 @@ foo = atoi(argv[1]);
 bar = atoi(argv[2]);
 
 /* Calculate the product */
-result = foo * bar;
+result = foo *bar;
 
 /* Print the result */
 printf("%d\n", result);

@@ -4,7 +4,7 @@
 /**
  * create_array:  creates an array of chars
  * and initializes it with a specific char
- *
+ * Description: creat array of size size and assign char c
  * @size: the size of the array to be created
  * @c: the character used to initialize the array
  *
@@ -18,7 +18,7 @@ char *crate_array(unsigned int size, char c)
 unsigned int i;
 char *arr;
 arr = malloc(size * sizeof(c));
-if (size == 0 || arr = NULL)
+if (size == 0 || arr == NULL)
 {
 return (NULL);
 }

@@ -7,7 +7,8 @@
  * @age: a float value that represents the dog's age
  * @owner: a pointer to a character array that represents the dog's owner
  *
- * Description: This structure contains information about a dog, including its name, age, and owner.
+ * Description: This structure contains information about a dog,
+ * including its name, age, and owner.
  */
 typedef struct dog
 {

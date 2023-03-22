@@ -5,6 +5,7 @@
  * @array: the pointer to array we want to iterate through
  * @size: size of the array
  * @action: pointer to a function
+ *
  * Description: This function takes three
  * agurments and iterates through the array
  * Returns : nothing

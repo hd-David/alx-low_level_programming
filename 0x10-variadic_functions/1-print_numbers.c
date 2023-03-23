@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
-/**                                                             
+/**
  * print_numbers - prints a variable number of integers
  * separated by a string
  * @separator: the string to be printed between the integers

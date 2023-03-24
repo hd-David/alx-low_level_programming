@@ -18,13 +18,13 @@ if (array && cmp)
 {
 if (size <= 0)
 return (-1);
+}
 for (k = 0; k < size; k++)
 {
 if (cmp(array[k]) != 0)
-{
+
 return (1);
-}
-}
+
 }
 return (-1);
 }

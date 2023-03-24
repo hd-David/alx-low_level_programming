@@ -21,11 +21,12 @@ op_t ops[] = {
 };
 int i = 0;
 
-while (ops[i].op)
+while (ops[i].op != NULL)
 {
-if (*(ops[i].op) == *s && !*(s + 1))
-return (ops[i].f);
+if (s[0] == ops[i].op[0])
+break;
 i++;
 }
-return (NULL);
+
+return (ops[i].f);
 }

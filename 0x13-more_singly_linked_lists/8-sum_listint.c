@@ -12,11 +12,12 @@ int sum_listint(listint_t *head)
 int sum = 0;
 listint_t *current_node;
 
-for (current_node = head; current_node != NULL;\
-current_node = current_node->next)
+for (; current_node = head; current_node != NULL)
 {
+current_node = current_node->next;
+
 sum += current_node->n;
 }
 
-return sum;
+return (sum);
 }

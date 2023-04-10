@@ -21,5 +21,5 @@ num_flips++;
 xor_result >>= 1;
 }
 
-return num_flips;
+return (num_flips);
 }

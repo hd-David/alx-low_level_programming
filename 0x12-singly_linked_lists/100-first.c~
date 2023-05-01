@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+
+#include <stdio.h>
+
+void before_main(void);
+
+int main(void)
+{
+before_main();
+return (0);
+}
+
+void before_main(void)
+{
+printf("You're beat! and yet, you must allow,\n"
+           "I bore my house upon my back!\n");
+}

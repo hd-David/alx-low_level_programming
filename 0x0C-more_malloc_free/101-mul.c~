@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+/**
+ * _isdigit - Checks if a character is a digit.
+ * @c: The character to check.
+ *
+ * Return: 1 if c is a digit, 0 otherwise.
+ */
+int _isdigit(int c)
+{
+return (c >= '0' && c <= '9');
+}
+/**
+ * print_error - Prints an error message and exits with status 98.
+ */
+void print_error(void)
+{
+printf("Error\n");
+exit(98);
+}
+/**
+ * multiply - Multiplies two positive numbers.
+ * @num1: The first number.
+ * @num2: The second number.
+ *
+ * Return: The result of the multiplication.
+ */
+int multiply(int num1, int num2)
+{
+return (num1 * num2);
+}
+/**
+ * main - Entry point. Multiplies two positive numbers.
+ * @argc: The number of arguments.
+ * @argv: An array of pointers to the arguments.
+ *
+ * Return: 0 if successful, 98 if the number of arguments is incorrect or if
+ *         any of the arguments is not a positive integer.
+ */
+int main(int argc, char *argv[])
+{
+int num1, num2, result;
+if (argc != 3)
+print_error();
+for (int i = 1; i < argc; i++)
+{
+for (int j = 0; argv[i][j] != '\0'; j++)
+{
+if (!_isdigit(argv[i][j]))
+print_error();
+}
+}
+num1 = atoi(argv[1]);
+num2 = atoi(argv[2]);
+if (num1 <= 0 || num2 <= 0)
+print_error();
+result = multiply(num1, num2);
+printf("%d\n", result);
+return (0);
+}

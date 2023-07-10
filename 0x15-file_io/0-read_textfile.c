@@ -1,7 +1,10 @@
-#include <stdio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include <stdlib.h>
 
-#include <main.h>
+#include "main.h"
 
 /**
  * read_textfile - Reads a text file and prints its contents to standard output
@@ -13,6 +16,8 @@
  *         0 if filename is NULL
  *         0 if write fails or does not write the expected amount of bytes
  */
+ssize_t read_textfile(const char *filename, size_t letters);
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t file_descriptor, num_letters_read, num_letters_written;

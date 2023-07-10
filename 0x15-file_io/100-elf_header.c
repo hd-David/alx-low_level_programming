@@ -30,9 +30,10 @@ typedef struct Elf64_Ehdr
  */
 void display_elf_header(const Elf64_Ehdr *header)
 {
-	printf("ELF Header:\n");
+  int i;
+    printf("ELF Header:\n");
 	printf("  Magic:   ");
-	for (int i = 0; i < 16; i++)
+	for ( i = 0; i < 16; i++)
 		printf("%02x ", header->e_ident[i]);
 	printf("\n");
 	printf("  Class:                             %s\n", header->e_ident[4] == 1 ? "ELF32" : "ELF64");

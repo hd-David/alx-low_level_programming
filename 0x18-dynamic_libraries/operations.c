@@ -40,7 +40,6 @@ int mul(int a, int b)
  * div - Divides two integers
  * @a: The dividend
  * @b: The divisor
- *
  * Return: The result of dividing a by b.
  */
 float div(int a, int b)

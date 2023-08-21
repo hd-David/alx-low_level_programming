@@ -43,12 +43,12 @@ int mul(int a, int b)
  *
  * Return: The result of dividing a by b.
  */
-int div(int a, int b)
+float div(int a, int b)
 {
     if (b == 0)
     {
         printf("Error: Division by zero!\n");
         return (0);
     }
-    return (a / b);
+    return (float)(a / b);
 }

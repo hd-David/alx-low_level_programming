@@ -13,7 +13,7 @@ int add(int a, int b)
 }
 
 /**
- * sub - Subtracts two integers
+ * sub - Subtracts two numbers
  * @a: The first integer
  * @b: The second integer
  *
